@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const { customer, appEvents } = require("./api");
 const HandleErrors = require("./utils/error-handler");
-const appEvents = require("./api/app-events");
 
 module.exports = async (app) => {
   app.use(express.json({ limit: "1mb" }));
